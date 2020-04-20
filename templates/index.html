@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body%}
+<br>
+<main role="main">
+    <div class="jumbotron">
+        <div class="col-sm-8 mx-auto">
+            <h1>Welcome</h1>
+            <p>Welcome to Subsan Blogs. Here we talk about web development tools; HTML5, CSS, JavaScript and Python.
+                As we move on, we jump into data science. You are expected to have some experience in web development,
+                but it is not mandatory.
+                You can watch our video lectures any time you want, pay attention in lectures and complete assignments
+                on time.
+                Your commitment is what matters the most. Happy learning!
+            </p>
+            <p>Go to our wedsite <a
+                    href="https://cs50.harvard.edu/web/?fbclid=IwAR0aG2HMDRaTEgLSLny5DqzHruUjbPUplUGhRTvfL07JdETSac2p-CAZfeg">CS50
+                    Web Development</a> and start your journey.</p>
+            <p>
+                <a class="btn btn-primary" href="{{url_for('post')}}" role="button">Go to Posts >></a>
+            </p>
+        </div>
+    </div>
+</main>
+{% endblock %}
